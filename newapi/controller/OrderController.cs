@@ -31,6 +31,31 @@ namespace newapi
             return _OrderHandler.Delete(order);
         }
 
+        [HttpGet]
+        [EnableCors("MyPolicy")]
+        [Route("/order")]
+        public IEnumerable < Order > order()
+        {
+            return _OrderHandler.GetOrder();
+        }
+
+        [HttpGet]
+        [EnableCors("MyPolicy")]
+        [Route("/order/total")]
+        public float Total([FromBody]Order order)
+        {
+            return _OrderHandler.Total(order);
+        }
+
+        [HttpGet]
+        [EnableCors("MyPolicy")]
+        [Route("/order/gst")]
+        public float GST([FromBody]Order order)
+        {
+            return _OrderHandler.GST(order);
+        }
+
+
         
         
     }
