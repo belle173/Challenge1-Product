@@ -22,6 +22,16 @@ namespace newapi
         {
             return _OrderHandler.GetOrder();
         }
+
+        [HttpDelete]
+        [EnableCors("MyPolicy")]
+        [Route("/order")]
+        public float Delete([FromBody]Order order)
+        {
+            return _OrderHandler.Delete(order);
+        }
+
+        
         
     }
 }

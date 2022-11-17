@@ -22,7 +22,6 @@ namespace newapi
         {
             return _CustomerHandler.GetCustomer();
         }
-      
-        
+  
     }
 }
