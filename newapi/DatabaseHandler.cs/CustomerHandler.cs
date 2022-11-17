@@ -6,7 +6,7 @@ using System.Linq;
 using System.Collections;
 using Classes;
 
-namespace API
+namespace newapi
 {
     public class CustomerHandler : DatabaseHandler
     {

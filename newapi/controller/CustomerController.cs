@@ -5,9 +5,8 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Linq;
-using Classes;
 
-namespace API
+namespace newapi
 {
     [Route("[controller]")]
     [ApiController]

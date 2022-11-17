@@ -22,13 +22,7 @@ namespace newapi
             return _ProductHandler.GetProduct();
         }
        
-        [HttpGet]
-        [EnableCors("MyPolicy")]
-        [Route("/customer")]
-        public string customer()
-        {
-            return "this is my customer";
-        }
+        
         
     }
 }
