@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "msql": "^1.0.3",
+    "tedious": "^15.1.1"
+  }
+}

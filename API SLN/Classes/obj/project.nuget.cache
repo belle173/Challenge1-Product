@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bWLjS6liPCOYvrvcHZDS3S2xUeXYXZ0wNezvnHmMlAxK5OP1B73PRqtda4Ury3AoUq21dqJSQjfZPAOCJgZD0Q==",
+  "success": true,
+  "projectFilePath": "/Users/isabellejetson/Documents/GitHub/Challenge1-Product/API SLN/Classes/Classes.csproj",
+  "expectedPackageFiles": [
+    "/Users/isabellejetson/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/isabellejetson/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
