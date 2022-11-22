@@ -31,29 +31,31 @@ namespace newapi
             return _OrderHandler.Delete(order);
         }
 
-        [HttpGet]
+        [HttpPut]
         [EnableCors("MyPolicy")]
         [Route("/order")]
-        public IEnumerable < Order > order()
+        public float AddOrder([FromBody]Order order)
         {
-            return _OrderHandler.GetOrder();
+            return _OrderHandler.AddOrder(order);
         }
 
-        [HttpGet]
-        [EnableCors("MyPolicy")]
-        [Route("/order/total")]
-        public float Total([FromBody]Order order)
-        {
-            return _OrderHandler.Total(order);
-        }
+        
 
-        [HttpGet]
-        [EnableCors("MyPolicy")]
-        [Route("/order/gst")]
-        public float GST([FromBody]Order order)
-        {
-            return _OrderHandler.GST(order);
-        }
+        // [HttpGet]
+        // [EnableCors("MyPolicy")]
+        // [Route("/order/total")]
+        // public float Total([FromBody]Order order)
+        // {
+        //     return _OrderHandler.Total(order);
+        // }
+
+        // [HttpGet]
+        // [EnableCors("MyPolicy")]
+        // [Route("/order/gst")]
+        // public float GST([FromBody]Order order)
+        // {
+        //     return _OrderHandler.GST(order);
+        // }
 
 
         

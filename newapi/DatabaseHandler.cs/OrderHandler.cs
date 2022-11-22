@@ -36,6 +36,46 @@ namespace newapi
             }
             return Order;
         }
+        
+        public int Delete(Order order)
+        { 
+            using(SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                conn.Open();
+                using(SqlCommand command = new SqlCommand ("DElETE FROM [ORDER] WHERE OrderDate = @order AND ProdID = @ProdID AND CustID = @CustID", conn))
+                {
+                    command.Parameters.AddWithValue("@Order", order.OrderDate);
+                    command.Parameters.AddWithValue("@ProdID", order.ProdID);
+                    command.Parameters.AddWithValue("@CustID", order.CustID);
+
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected;
+                }
+                conn.Close();
+            }
+        }
+
+        public int AddOrder(Order order)
+        {
+          using(SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                conn.Open();
+                using(SqlCommand command = new SqlCommand ("INSERT INTO [ORDER] VALUES(@OrderDate, @Quantity, @ShipDate, @ShipMode, @ProdID, @CustID)", conn))
+                {
+                    command.Parameters.AddWithValue("@OrderDate", order.OrderDate);
+                    command.Parameters.AddWithValue("@ProdID", order.ProdID);
+                    command.Parameters.AddWithValue("@CustID", order.CustID);
+                    command.Parameters.AddWithValue("@Quantity", order.Quantity);
+                    command.Parameters.AddWithValue("@ShipDate", order.ShipDate);
+                    command.Parameters.AddWithValue("@ShipMode", order.ShipMode);
+
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected;
+                }
+                conn.Close();
+            }  
+        }
+
 
     }
 }

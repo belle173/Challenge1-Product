@@ -1,36 +1,33 @@
 <h1>ORDER</h1>
 
-<form action="/action_page.php">
+
 
     <label for="ProdID ">Product ID:</label><br>
-    <input type="text" id="ProdID " name="ProdID " ><br><br>
+    <input type="text" [(ngModel)]="ProdID " ><br><br>
 
     <label for="OrderDate">Order Date:</label><br>
-    <input type="text" id="OrderDate" name="OrderDate" ><br><br>
+    <input type="text" [(ngModel)]="OrderDate" ><br><br>
 
     <label for="ShipDate ">Ship Date :</label><br>
-    <input type="text" id="ShipDate " name="ShipDate " ><br><br>
+    <input type="text" [(ngModel)]="ShipDate " ><br><br>
 
     <label for="Quantity ">Quantity :</label><br>
-    <input type="text" id="Quantity " name="Quantity " ><br><br>
+    <input type="text" [(ngModel)]="Quantity " ><br><br>
 
     <label for="CustID">Customer ID:</label><br>
-    <input type="text" id="CustID" name="CustID" ><br><br>
+    <input type="text" [(ngModel)]="CustID" ><br><br>
 
     <label for="ShipModee">Shipment Mode:</label><br>
-    <input type="text" id="ShipMode" name="ShipMode" ><br><br>
+    <input type="text" [(ngModel)]="ShipMode" ><br><br>
     
     <button>Create Order</button>
-  </form> 
 
-  // Table 
 
     <div>
+      
     <button>Update Order</button>
     <button>Delete Order</button>
     </div>
-
-    
 
 
     <!--
