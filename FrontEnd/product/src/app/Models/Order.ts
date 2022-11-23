@@ -1,8 +1,8 @@
 export interface Order{
-    ProdID:string;
-    OrderDate:string;
-    ShipDate:string;
-    Quantity:number;
-    CustID:string;
-    ShipMode:string;
+    prodID:string;
+    orderDate:string;
+    shipDate:string;
+    quantity:number;
+    custID:string;
+    shipMode:string;
 }

@@ -1,12 +1,10 @@
 <h1>ORDER</h1>
 
-
-
+<h2>New Order</h2>
     <label for="ProdID ">Product ID:</label><br>
-    <input type="text" [(ngModel)]="ProdID " ><br><br>
-
-    <label for="OrderDate">Order Date:</label><br>
-    <input type="text" [(ngModel)]="OrderDate" ><br><br>
+    <select [(ngModel)]="selectedProduct">
+        <option *ngFor="let order of product" [ngValue]="order">{{order.prodID}} </option>
+      </select> <br><br>
 
     <label for="ShipDate ">Ship Date :</label><br>
     <input type="text" [(ngModel)]="ShipDate " ><br><br>
@@ -15,27 +13,60 @@
     <input type="text" [(ngModel)]="Quantity " ><br><br>
 
     <label for="CustID">Customer ID:</label><br>
-    <input type="text" [(ngModel)]="CustID" ><br><br>
+    <select [(ngModel)]="selectedCustomer">
+        <option *ngFor="let order of customer" [ngValue]="order.custID">{{order.custID}} </option>
+      </select> <br><br>
 
-    <label for="ShipModee">Shipment Mode:</label><br>
-    <input type="text" [(ngModel)]="ShipMode" ><br><br>
+    <label for="ShipMode">Shipment Mode:</label><br>
+    <select [(ngModel)]="selectedShipMode">
+        <option value="Second Class">Second Class</option>
+        <option value="Standard Class">Standard Class</option>
+        <option value="First Class">First Class</option>
+        <option value="Overnight Express">Overnight Express</option>
+      </select><br><br>
     
-    <button>Create Order</button>
+    <button (click)="addOrder()">Create Order</button>
 
+    
+<h2>Delete Order</h2>
+    <select [(ngModel)]="selectedOrderToDelete">
+        <option *ngFor="let order of orders" [ngValue]="order">{{order.prodID}} X {{order.quantity}} - {{order.custID}}</option>
+    </select>
+    <button (click)="deleteOrder()">Delete Selected Order</button>
+     
+<h2>Edit Order</h2>
 
-    <div>
-      
-    <button>Update Order</button>
-    <button>Delete Order</button>
-    </div>
+    <!-- need to be able to select on existing order -->
+    <select [(ngModel)]="selectedOrderToEdit" (change)="changedEdit()">
+        <option *ngFor="let order of orders" [ngValue]="order">{{order.prodID}} X {{order.quantity}} - {{order.custID}}</option>
+    </select>
+        <br>
+    <!-- these should be bound to edited order property -->
+    <label for="ProdID ">Product ID:</label><br>
+    <select [(ngModel)]="editedOrder.prodID">
+        <option *ngFor="let order of product" [ngValue]="order.prodID">{{order.prodID}} </option>
+    </select> <br><br>
 
+    <label for="ShipDate ">Ship Date :</label><br>
+    <input type="text" [(ngModel)]="editedOrder.shipDate " ><br><br>
 
-    <!--
-    <div>
-    <button>View Order</button>  
-    <button>View Customer</button>
-    <button>View Order</button>
-    </div>
-    -->
+    <label for="Quantity ">Quantity :</label><br>
+    <input type="text" [(ngModel)]="editedOrder.quantity " ><br><br>
+
+    <label for="CustID">Customer ID:</label><br>
+    <select [(ngModel)]="editedOrder.custID">
+        <option *ngFor="let order of customer" [ngValue]="order.custID">{{order.custID}} </option>
+    </select> <br><br>
+
+    <label for="ShipMode">Shipment Mode:</label><br>
+    <select [(ngModel)]="editedOrder.shipMode">
+        <option value="Second Class">Second Class</option>
+        <option value="Standard Class">Standard Class</option>
+        <option value="First Class">First Class</option>
+        <option value="Overnight Express">Overnight Express</option>
+    </select><br><br>
+
+    <!-- needs to go to the right function -->
+    <button (click)="editOrder()">Edit Order</button>
 
     

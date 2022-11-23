@@ -1,6 +1,6 @@
 export interface Product{
-    CatID:string;
-    ProdID:string;
-    Description:string;
-    UnitPrice:number;
+    catID:string;
+    prodID:string;
+    description:string;
+    unitPrice:number;
 }
