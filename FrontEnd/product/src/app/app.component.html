@@ -1,4 +1,22 @@
 <h1>ORDER</h1>
+<table>
+    <tr>
+        <th> Order Date</th>
+        <th> Quantity</th>
+        <th> ShipDate</th>
+        <th> ShipMode</th>
+        <th> ProdID</th>
+        <th> CustID</th>
+    </tr>
+    <tr *ngFor="let ord of orders">
+        <td>{{ord.orderDate}}</td>
+        <td>{{ord.quantity}}</td>
+        <td>{{ord.shipDate}}</td>
+        <td>{{ord.shipMode}}</td>
+        <td>{{ord.prodID}}</td>
+        <td>{{ord.custID}}</td>
+    </tr>
+</table>
 
 <h2>New Order</h2>
     <label for="ProdID ">Product ID:</label><br>

@@ -1,0 +1,17 @@
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/newapi
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/appsettings.Development.json
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/appsettings.json
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/newapi.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/newapi.deps.json
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/newapi.runtimeconfig.json
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/newapi.pdb
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/Microsoft.OpenApi.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/System.Data.SqlClient.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/runtimes/win-arm64/native/sni.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/runtimes/win-x64/native/sni.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/runtimes/win-x86/native/sni.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/isabellejetson/Documents/GitHub/Challenge1-Product/DOTNET/newapi/bin/Debug/net6.0/publish/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll

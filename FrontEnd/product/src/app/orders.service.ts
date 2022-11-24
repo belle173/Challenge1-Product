@@ -11,7 +11,8 @@ import { Product } from './Models/Product';
   providedIn: 'root'
 })
 export class OrdersService {
-  readonly baseUrl:string = "https://localhost:7085"
+  readonly baseUrl:string = "https://diplomachallengeapiisabelle.azurewebsites.net"
+  //readonly baseUrl:string = "https://localhost:7085"
 
   constructor(private _http:HttpClient) { }
 
